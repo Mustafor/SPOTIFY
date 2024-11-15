@@ -2,11 +2,11 @@ import React from 'react'
 import { NavigateIcon } from '../assets/images/icon'
 import { useNavigate } from 'react-router'
 
-function NavigateBtn() {
+function NavigateBtn({bg}) {
     const navigate = useNavigate()
 
   return (
-    <div className='flex items-center py-5 px-10 space-x-[22px]'>
+    <div className={`flex items-center py-5 px-10 space-x-[22px] shadow-md ${bg}`}>
     <button onClick={() => navigate(-1)} className='w-[40px] navigate-btn h-[40px] rounded-full flex items-center justify-center'>
       <NavigateIcon/>
     </button>

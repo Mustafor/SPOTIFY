@@ -8,6 +8,13 @@
     background-size: cover;
 }
 
+.single-music{
+    background-image: url("./assets/images/single.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 79px;
+}
+
 .active{
     opacity: 1;
 }
@@ -22,4 +29,16 @@
 
 .music-card-item{
     background-color: rgba(255, 255, 255, 4%);
+}
+
+.PlayerRSWP{
+    background-color: #181818 !important;
+}
+
+._ControlsButtonsRSWP, ._VolumeInlineRSWP, .rswp_progress, .rswp_duration{
+    color: white !important;
+}
+
+._ActionsRSWP > div > div > button {
+    color: white !important;
 }
