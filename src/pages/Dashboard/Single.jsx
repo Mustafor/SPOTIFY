@@ -21,7 +21,6 @@ function Single() {
     spotifyApi.setAccessToken(accessToken)
   }, [accessToken])
 
-  // Fetch the album data using the album ID
   useEffect(() => {
     if (accessToken && id) {
       spotifyApi.getAlbum(id).then((res) => {
@@ -53,9 +52,9 @@ function Single() {
     setPlaying(true)
   }
 
-  const albumImage = singleMusic.images && singleMusic.images[0] ? singleMusic.images[0].url : ''
-  const artistName = singleMusic.artists && singleMusic.artists[0] ? singleMusic.artists[0].name : 'Unknown Artist'
-  const releaseDate = singleMusic.release_date || 'Release date not available'
+  const albumImage = singleMusic.images && singleMusic.images[0] ? singleMusic.images[0].url : ""
+  const artistName = singleMusic.artists && singleMusic.artists[0] ? singleMusic.artists[0].name : ""
+  const releaseDate = singleMusic.release_date || ""
 
   return (
     <div className='single-music h-auto'>
